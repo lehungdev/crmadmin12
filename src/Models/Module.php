@@ -660,7 +660,7 @@ class Module extends Model
                         break;
                     }
                 }
-                if(is_string($field->popup_vals) && Str::of(($field->popup_vals)->startsWith('@'))) {
+                if(is_string($field->popup_vals) && Str::startsWith($field->popup_vals, '@')) {
                     if($update) {
                         $var = $table->integer($field->colname)->unsigned()->change();
                     } else {

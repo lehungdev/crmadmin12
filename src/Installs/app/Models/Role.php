@@ -15,11 +15,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Role extends LaravelEntrustRole
 {
     use SoftDeletes;
-	
+
 	protected $table = 'roles';
-	
+
 	protected $hidden = [
-        
+
     ];
 
 	protected $guarded = [];
